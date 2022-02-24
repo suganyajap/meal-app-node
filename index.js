@@ -15,6 +15,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(userRoutes);
 
-
+app.get('/',(request,response)=>
+{
+    response.send("Hello ***🌍😊");
+});
 
 app.listen(PORT,()=>console.log("App is started in PORT",PORT))
